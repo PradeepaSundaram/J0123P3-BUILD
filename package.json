@@ -1,0 +1,22 @@
+{
+  "name": "j0123p3-build",
+  "version": "1.0.0",
+  "description": "Library Management",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/PradeepaSundaram/J0123P3-BUILD)"
+  },
+  "author": "pradeepa",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
