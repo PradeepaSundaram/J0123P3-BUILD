@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 app.get("/users", (req, res) => {
   res.status(200).json({
     success: true,
-    data: books,
+    data: users,
   });
 });
 
