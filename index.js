@@ -1,5 +1,6 @@
 const express = require("express");
 const { users } = require("./data/users.json");
+const { books } = require("./data/books.json");
 
 const app = express();
 
@@ -25,7 +26,7 @@ app.get("/", (req, res) => {
 app.get("/users", (req, res) => {
   res.status(200).json({
     success: true,
-    data: users,
+    data: books,
   });
 });
 
