@@ -43,12 +43,12 @@ missed by renewal && subscription date >> 150/-
 ## /users
 
 POST: Create a new user
-GET: all the user info here
+GET: Get all the users
 
 ## /users/{id}
 
-GET: Get a user by id
-PUT: Update a user by their ID
+GET: Get user by id
+PUT: Updating a user by their ID
 DELETE: Delete a user by id (chk if he/she still have an issued book) && (is there any fine to paid)
 
 ## /users/subscription-details/{id}
@@ -78,3 +78,24 @@ GET: Get all issued books with their fine
 ## npm i nodemon --save-dev
 
 ## npm run dev
+
+...each
+"name": "Jane",
+"surname": "Doe",
+"email": "user@email.com",
+"subscriptionType": "Premium",
+"subscriptionDate": "03/01/2024"
+
+...data
+"data": {
+"name": "pradeepa",
+"surname": "sundaram"
+}
+
+const index = users.indexOf(user);
+users.splice(index,1)
+
+var class = {"six", "seven", "eight"};
+indexOf()
+class.indexOf("seven")
+1
