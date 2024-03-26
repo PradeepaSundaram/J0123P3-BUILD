@@ -101,13 +101,16 @@ router.post("/", (req, res) => {
   }
 
   const allBooks = [...books, data];
-  return res.status(200).json({ success: true, data: allBooks });
+  return res.status(200).json({
+    success: true,
+    data: allBooks,
+  });
 });
 
 /**
  * Route: /books/:id
  * Method: PUT
- * Decsription: Update a Bookk By Its ID
+ * Decsription: Update a Book By Its ID
  * Access: Public
  * Paramaters: Id
  */
@@ -131,6 +134,7 @@ router.put("/:id", (req, res) => {
         ...data,
       };
     }
+
     return each;
   });
   return res.status(200).json({
